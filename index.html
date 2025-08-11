@@ -9,30 +9,67 @@
 </head>
 <body>
     <div id="body_container">
-        <div id="header_top">
-            <div class="toggle_wrap">
-                <div class="toggle_head">
-                    <div class="layout">
-                        <span class="nuri_txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
-                    </div>
+        <div id="wrap">
+            <div id="header" class="main-header">
+                <h1 class="logo"><a href="/"></a></h1>
+                <div id="cms-gnb">
+                    <ul>
+                        <li><a href="/">전체 자치법규</a></li>
+                        <li><a href="/">자치단체별 자치법규</a></li>
+                        <li><a href="/">최근 제·개정 자치법규</a></li>
+                        <li><a href="/">입법예고</a></li>
+                        <li><a href="/">자치법규 현황</a></li>
+                        <li><a href="/">교육저치법규</a></li>
+                    </ul>
                 </div>
+                <div class="user-support">
+                    <a href="/" class="button border">주민e직접
+                        <i class="iconset ico-link"></i>
+                    </a>
+                    <button type="button" class="toggle-menu"></button>
+                </div>
+                <!-- <div class="gnb-mobile"></div> -->
+            </div>
+
+            <div id="main_container">
+                <form id="mainForm" name="mainForm" method="post">
+                    <div id="main_cont1" class="section cont-01">
+                        <div class="inner">
+                            <div class="cont-01-wrap">
+                                <div class="raw-condition">
+                                    <div class="select-location">
+                                        <div class="block">
+                                            <div class="title-area">
+                                                <strong id="selectCtpvNm">대한민국</strong>
+                                                <button type="button" id="btnCtpv">시도 선택</button>
+                                            </div>
+                                            <div class="popup-select" id="test"></div>
+                                        </div>
+                                        <div class="block">
+                                            <div class="title-area">
+                                                <strong id="selectCtpvNm">모든 자치단체의</strong>
+                                                <button type="button" id="btnCtpv">시도군 선택</button>
+                                            </div>
+                                             <div class="popup-select" id="test"></div>
+                                        </div>
+                                    </div>
+                                    <div class="search-raw serch">
+                                        <div class="input-wrap">
+                                            <div class="wh-block in_txt">
+                                                <input type="text" placeholder="법규를 찾아보세요(법규명과 내용 통합검색)" id="topKwd" name="srchKwd">
+                                                <a href="/" id="top_arrow" class="auto_arr"></a>
+                                            </div>
+                                            <a href="/" class="sm-raw-block btn-search-raw">검색</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-01"></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-
-        <header id="top_layout" class="header on">
-            <div class="header_in">
-                <div class="top_wrap head_body">
-                    <div class="layout">
-                        <h1  id="logo" class="logo">
-                            <a href="/" class="logo_link"><img src="./img/logo.svg" alt=""></a>
-                            <a href="/" class="mois_link"><img src="./img/slogan2.svg" alt=""></a>
-                        </h1>
-                        <div class="utile_link_group"></div>
-                        <div class="utile_wrap"></div>
-                    </div>
-                </div>
-            </div>
-        </header>
     </div>
 </body>
 </html>
