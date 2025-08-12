@@ -378,6 +378,10 @@ h2.tit {
     margin-left: 0;
 }
 
+.square-list .block:nth-child(n+5) {
+    margin-top: 40px;
+}
+
 .square-list .block {
     float: left;
     margin-left: 40px;
