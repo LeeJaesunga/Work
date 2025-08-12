@@ -184,7 +184,7 @@
 }
 
 .cont-01-wrap {
-    position: relative;
+   position: relative;
     height: 400px;
     padding-top: 36px;
 }
@@ -262,8 +262,9 @@
     padding-right: 60px;
     border: none;
     background: none;
-    color: #fff;
-    font-size: 42px;
+    color: #fff !important;
+    font-size: 42px !important;
+    font-weight: 700;
     z-index: 2;
 }
 
@@ -289,8 +290,80 @@
     height: 90px;
     border-radius: 15px;
     font-size: 0;
+    margin-left: 18px;
 }
 
 .cont-01-wrap .raw-condition .sm-raw-block.btn-search-raw {
     background: #0fc258 url("/img/btn-search-raw.png") no-repeat center;
+}
+
+.cont-01-wrap .box-01 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cont-01-wrap .raw-block.history-raw {
+    background: #382585 url("/img/bg-history-raw02.png") no-repeat right 42px bottom 42px;
+    margin-bottom: 25px;
+}
+
+.cont-01-wrap .raw-block.myloca-raw {
+    background: #2e66c7 url("/img/bg-myloca-raw03.png") no-repeat right 42px bottom 42px;
+    margin-bottom: 25px;
+}
+
+.cont-01-wrap .raw-block {
+    display: block;
+    width: 225px;
+    height: 103px;
+    padding: 35px 30px;
+    border-radius: 15px;
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    word-break: keep-all;
+}
+
+#main_container .cont-01 .moving-mouse {
+    position: relative;
+    width: 100%;
+    height: 36px;
+    margin: 75px 0 0 0;
+    text-align: center;
+}
+
+#main_container .cont-01 .moving-mouse .ico-mouse {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin: 20px 0 0 -12px;
+    width: 24px;
+    height: 36px;
+    background-image: url("/img/ico-mouse.png");
+}
+
+#main_container .cont-02 {
+    background: url("/img/bg-main-cont02.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#main_container .cont-02 h2.tit {
+    font-size: 34px;
+    text-align: center;
+    color: #fff;
+    background: none;
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+h2.tit {
+    margin: 0;
+    padding: 0 0 30px 0;
+    color: #222;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
 }
