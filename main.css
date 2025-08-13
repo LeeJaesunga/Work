@@ -69,6 +69,20 @@
     font-weight: 500;
 }
 
+#cms-gnb > ul > li > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px;
+    background-color: #007bff; 
+}
+
+#cms-gnb > ul > li > a:hover::after {
+    width: 100%; 
+}
+
 #cms-gnb ul:after {
     clear: both;
     display: block;
@@ -234,7 +248,7 @@
     position: absolute;
     top: 90px;
     left: 0;
-    width: 100%;
+    width: 91%;
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
@@ -248,17 +262,29 @@
 .cont-01-wrap .raw-condition .select-location .block .popup-select .button-area a {
     float: left;
     height: 36px;
-    min-width: 96px;
+    min-width: 67px;
     text-align: center;
     line-height: 36px;
     font-size: 15px;
     color: #111;
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 17px;
     margin: 10px 10px 0 0;
     border-radius: 18px;
     background-color: #f6f6f6;
 }
+
+.cont-01-wrap .raw-condition .select-location .block .popup-select .pop-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 14px;
+    height: 14px;
+    font-size: 0;
+    border: none;
+    background: url("/img/btn-pop-close.png") no-repeat 0;
+}
+
 
 #test .popup-select {
     display: none;
@@ -375,6 +401,17 @@
     text-align: center;
 }
 
+/* 애니메이션 */
+
+@keyframes mouseMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(var(--move-distance, 10px));
+    }
+}
+
 #main_container .cont-01 .moving-mouse .ico-mouse {
     display: block;
     position: absolute;
@@ -384,6 +421,9 @@
     width: 24px;
     height: 36px;
     background-image: url("/img/ico-mouse.png");
+    animation: mouseMove var(--move-time, 2s) ease-in-out infinite;
+    --move-time: 1.5s;     /* 1.5초에 한번 움직임 */
+    --move-distance: 30px; /* 15px 아래로 이동 */
 }
 
 #main_container .cont-02 {
