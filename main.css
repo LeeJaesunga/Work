@@ -192,7 +192,7 @@
 }
 
 .inner {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     position: relative;
 }
@@ -816,4 +816,39 @@ address {
 #footer .footer-area .footer-link-select .link-list li a {
     font-size: 14px;
     color: #a2a2a2;
+}
+
+@media (max-width: 1400px) { 
+
+    /* body {
+        min-width: 1400px;
+    } */
+
+    #header.main-header {
+        height: 55px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        background: none;
+    }
+
+    #header h1.logo {
+        position: relative;
+        float: left;
+        top: 15px;
+        left: 25px;
+        display: inline-block;
+    }
+
+        #cms-gnb {
+        display: none;
+    }
+
+    #header.main-header .user-support {
+        width: 56px;
+        height: 55px;
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    #header .user-support a.button.border {
+        display: none;
+    }
 }
