@@ -1006,4 +1006,40 @@ address {
     #main_container .cont-01 .moving-mouse {
         margin: 300px 0 0 0;
     }
+
+        #main_container .cont-02 h2.tit {
+        font-size: 28px;
+        padding-top: 15px;
+    }
+
+    /* .only-pc {
+        display: none !important;
+    } */
+
+    .square-list {
+        display: flex;
+    }
+
+    .square-list .block {
+        height: 370px;
+        margin-left: 19px;
+    }
+
+    .square-list .block a {
+        width: 205px;
+    }
+
+    .square-list .block p.txt {
+        margin-top: 59px;
+        font-size: 12px;
+    }
+
+    .col-wrap .col {
+        width: 100%;
+    }
+
+    .col-wrap .col:last-child {
+        padding-left: 0;
+        margin-top: 40px;
+    }
 }
