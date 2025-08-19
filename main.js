@@ -35,3 +35,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.querySelector(".toggle-menu");
+    const gnbMobile = document.querySelector(".gnb-mobile");
+    const mGnb = gnbMobile.querySelector(".m-gnb");
+    const closeBtn = gnbMobile.querySelector(".gnb-close button");
+
+    // 메뉴 열기
+    toggleBtn.addEventListener("click", function () {
+        gnbMobile.classList.add("open");
+        mGnb.classList.add("open");
+    });
+
+    // 메뉴 닫기
+    closeBtn.addEventListener("click", function () {
+        gnbMobile.classList.remove("open");
+        mGnb.classList.remove("open");
+    });
+});

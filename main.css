@@ -171,6 +171,141 @@
     content: "";
 }
 
+#header .gnb-mobile {
+    display: none;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    background-color: #fff;
+    padding: 0 0 208px;
+    text-align: left;
+    z-index: 99;
+}
+
+.gnb-mobile:before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 208px;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.gnb-mobile .user-wrap {
+    width: 100%;
+    height: 208px;
+    position: relative;
+    background: url("/img/bg-gnb-pc.png") no-repeat center;
+    background-size: cover;
+    z-index: 99;
+}
+
+.gnb-mobile .user-wrap .top-area {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.gnb-mobile .user-wrap a.menu-logo {
+    position: absolute;
+    top: 28px;
+    left: 25px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    height: 25px;
+    font-size: 0;
+    background: url("/img/bg-logo-big-w\ \(1\).png") no-repeat 0;
+    background-size: 100%;
+}
+
+.gnb-mobile .user-wrap .search-area {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.gnb-mobile .user-wrap .search-area .form-in {
+    width: 700px;
+    margin: 0 auto;
+    border-bottom: 2px solid #fff;
+}
+
+.gnb-mobile .user-wrap .search-area .form-in input {
+    width: 630px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: #fff;
+    outline: none;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.ir {
+    text-indent: -9999px;
+    position: fixed;
+    top: -9999px;
+    font-size: 1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.gnb-mobile .user-wrap .search-area .form-in .btn-search-white {
+    width: 30px;
+    height: 65px;
+    font-size: 0;
+    background: url("/img/btn-search-white.png") no-repeat center;
+}
+
+.gnb-mobile .m-gnb {
+    display: none;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    z-index: 99;
+}
+
+.gnb-mobile .gnb-close {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    background: url("/img/line-m-close.png") no-repeat left center;
+    background-size: 1px 80px;
+    z-index: 99;
+}
+
+.gnb-mobile .gnb-close button {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: url("/img/btn-gnb-close.png") no-repeat center;
+    background-size: 23px 23px;
+    text-indent: -9999px;
+}
+
+.gnb-mobile.open {
+    display: block;
+    height: 100%;
+}
+
+.gnb-mobile.open .m-gnb {
+    display: block;
+}
+
 #main_container {
     position: relative;
     display: block;
@@ -863,6 +998,149 @@ address {
         border-left: 0px !important;
         background: url("/img/btn-menu-pc-w.png") no-repeat center center;
         background-size: 18px 14px;
+    }
+
+    .gnb-mobile {
+        /* display: none; */
+        height: 100% !important;
+        bottom: 0;
+    }
+
+    .gnb-mobile:before {
+    content: '';
+    width: 0;
+}
+
+    .gnb-mobile .user-wrap {
+        width: 100%;
+        height: 115px;
+        position: relative;
+        background: url("/img/bg-mobile-menu-top.png") no-repeat 0;
+        background-size: cover;
+        z-index: 99;
+    }
+
+    .gnb-mobile .user-wrap .top-area {
+        display: block;
+        height: 50px;
+        background: url("/img/line-m-top.png") repeat-x left bottom;
+        background-size: 1px;
+    }
+
+    .gnb-mobile .user-wrap a.menu-logo {
+        top: 18px;
+        left: 25px;
+        width: 120px;
+        height: 14px;
+        background-size: 100%;
+    }
+
+    .gnb-mobile .user-wrap .search-area {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .gnb-mobile .user-wrap .search-area .form-in {
+        width: 100%;
+        margin: 0;
+        border-bottom: none;
+    }
+
+    .gnb-mobile .user-wrap .search-area .form-in input {
+        float: left;
+        width: calc(95% - 50px);
+        height: 65px;
+        padding: 0 0 0 25px;
+        font-size: 18px;
+    }
+
+    .gnb-mobile .user-wrap .search-area .form-in .btn-search-white {
+        float: left;
+        width: 50px;
+        height: 65px;
+        background-size: 24px;
+    }
+
+    .gnb-mobile .user-wrap .search-area .form-in:after {
+        clear: both;
+        content: '';
+        display: block;
+    }
+
+    .gnb-mobile .m-gnb {
+        display: block;
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .gnb-mobile .m-gnb ul {
+    }
+
+    .gnb-mobile .m-gnb > ul > li {
+        width: 94%;
+        height: 60px;
+        min-height: auto;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 0;
+    }
+
+    .gnb-mobile .m-gnb > ul > li > a {
+        display: block;
+        height: 55px;
+        padding: 20px 0;
+        font-size: 14px;
+        pointer-events: auto;
+    }
+
+    .gnb-mobile .m-gnb ul li a {
+        position: relative;
+        color: #fff;
+        font-size: 15px;
+        color: #111;
+        font-weight: bold;
+    }
+
+    .gnb-mobile .m-gnb > ul > li:last-child {
+        padding: 20px 0;
+        border-bottom: 0;
+    }
+
+    .gnb-mobile .m-gnb > ul > li:last-child a {
+        display: block;
+        padding: 0;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        text-align: center;
+        background: #f1f1f2;
+    }
+
+    .gnb-mobile .m-gnb > ul > li > a .link {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin-left: 3px;
+        background: url("/img/btn-link.png") no-repeat 0;
+        background-size: 100%;
+    }
+
+    .gnb-mobile .gnb-close {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+        background: url("/img/line-m-close\ \(1\).png") no-repeat left center;
+        background-size: 1px 50px;
+    }
+
+    .gnb-mobile .gnb-close button {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background: url("/img/btn-gnb-close\ \(1\).png") no-repeat center;
+        background-size: 17px 17px;
+        text-indent: -9999px;
     }
 
     #main_container .cont-01 {
