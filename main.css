@@ -1042,4 +1042,138 @@ address {
         padding-left: 0;
         margin-top: 40px;
     }
+
+    .col-wrap .col {
+        width: 100%;
+        /* float: none; */
+        padding-right: 0;
+    }
+
+    #main_container .cont-04 h3.tit {
+        font-size: 20px;
+    }
+
+    .round-data-area {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .round-data-area .round {
+        width: 105px;
+        height: 105px;
+        border-radius: 105px;
+        margin-left: -12px;
+    }
+
+    .round-data-area .round a {
+        padding: 15px 0;
+    }
+
+    .round-data-area .round .category {
+        font-size: 13px;
+    }
+
+    .round-data-area .round .num {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .round-data-area .round .status {
+        font-size: 11px;
+        line-height: 18px;
+        padding: 0 10px;
+        height: 20px;
+        border-radius: 10px;
+        margin-top: 7px;
+    }
+
+    .round-data-area .round {
+        width: 105px;
+        height: 105px;
+        border-radius: 105px;
+        margin-left: -12px;
+    }
+
+    .round-data-area .round a {
+        padding: 15px 0;
+    }
+
+    .round-data-area .round .category {
+        font-size: 13px;
+    }
+
+    .round-data-area .round .num {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .round-data-area .round .status {
+        font-size: 11px;
+        line-height: 18px;
+        padding: 0 10px;
+        height: 20px;
+        border-radius: 10px;
+        margin-top: 7px;
+    }
+
+    .col-wrap .col:last-child {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 60px;
+    }
+
+    #footer {
+        padding: 20px 0;
+    }
+
+    #footer .footer-area {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+        #footer .footer-area .foot-logo {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        background: url("/img/bg-footer-logo\ \(1\).png") no-repeat center top;
+        font-size: 0;
+    }
+
+    #footer .footer-area .footer_txt {
+        font-size: 13px;
+    }
+
+    #footer .footer-area .footer_txt .policy-list {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    #footer .footer-area .footer_txt .policy-list li:first-child {
+        margin-left: 4px;
+    }
+
+    #footer .footer-area .footer_txt .policy-list li {
+        float: none;
+        margin-left: 0;
+    }
+
+    #footer .footer-area .footer_txt p {
+        font-size: 12px;
+    }
+
+    #footer .footer-area .footer_txt .policy-list li:last-child {
+        margin-top: 4px;
+    }
+
+    #footer .footer-area .footer_txt .copy {
+        margin-top: 4px;
+    }
+
+    #footer .footer-area .footer-link-select {
+        display: none;
+    }
 }
