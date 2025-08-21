@@ -36,21 +36,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.querySelector(".toggle-menu");
-    const gnbMobile = document.querySelector(".gnb-mobile");
-    const mGnb = gnbMobile.querySelector(".m-gnb");
-    const closeBtn = gnbMobile.querySelector(".gnb-close button");
 
-    // 메뉴 열기
-    toggleBtn.addEventListener("click", function () {
-        gnbMobile.classList.add("open");
-        mGnb.classList.add("open");
-    });
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.querySelector("#header .user-support .toggle-menu");
+    const gnbMobile = document.querySelector("#header .gnb-mobile");
+    const closeBtn = document.querySelector("#header .gnb-close button");
 
-    // 메뉴 닫기
-    closeBtn.addEventListener("click", function () {
-        gnbMobile.classList.remove("open");
-        mGnb.classList.remove("open");
-    });
+    console.log("toggleBtn:", toggleBtn);
+    console.log("gnbMobile:", gnbMobile);
+    console.log("closeBtn:", closeBtn);
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener("click", function() {
+            console.log("메뉴 열기 클릭됨 ✅");
+            gnbMobile.classList.add("active");
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener("click", function() {
+            console.log("메뉴 닫기 클릭됨 ✅");
+            gnbMobile.classList.remove("active");
+        });
+    }
 });
+

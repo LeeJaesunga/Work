@@ -159,6 +159,7 @@
     position: relative;
     top: 0;
     font-size: 0;
+    /* z-index: 10000; */
 }
 
 #header.main-header .user-support .toggle-menu {
@@ -183,6 +184,11 @@
     padding: 0 0 208px;
     text-align: left;
     z-index: 99;
+}
+
+.gnb-mobile.active {
+  display: block !important;
+  height: 100%;
 }
 
 .gnb-mobile:before {
@@ -297,14 +303,6 @@
     text-indent: -9999px;
 }
 
-.gnb-mobile.open {
-    display: block;
-    height: 100%;
-}
-
-.gnb-mobile.open .m-gnb {
-    display: block;
-}
 
 #main_container {
     position: relative;
